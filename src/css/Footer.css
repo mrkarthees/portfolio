@@ -1,0 +1,26 @@
+footer {
+	width: 70%;
+	padding: 10px;
+	color: var(--white);
+	background-image: radial-gradient(
+		at 50% 100%,
+		var(--accent) -160rem,
+		transparent 60%
+	);
+}
+footer p {
+	text-align: center;
+	font-size: 13.5px;
+	letter-spacing: 0.7px;
+	font-weight: 200;
+	line-height: 1.6;
+}
+@media screen and (max-width: 500px) {
+	footer {
+		width: 80%;
+	}
+	footer p {
+		font-size: 12px;
+		font-weight: 200;
+	}
+}

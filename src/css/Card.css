@@ -1,0 +1,200 @@
+.card {
+	width: 100%;
+	height: 280px;
+	border: 1px solid var(--border);
+	border-radius: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.card video {
+	width: 40%;
+	height: 90%;
+	max-height: 90%;
+	margin: 0px 10px;
+	border-radius: 10px;
+	object-fit: cover;
+	object-position: center;
+}
+
+.card .details {
+	width: 100%;
+	height: 90%;
+	max-height: 90%;
+	margin-right: 10px;
+	border-radius: 10px;
+	padding: 10px;
+	background-color: var(--bg-layer-one);
+}
+.details h1 {
+	font-size: 18px;
+	font-weight: 600;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+	color: var(--accent);
+}
+.details p {
+	width: 90%;
+	text-align: left;
+	max-height: 100px;
+	overflow-y: scroll;
+	font-size: 13.5px;
+	font-weight: 300;
+	letter-spacing: 1px;
+	text-transform: capitalize;
+	line-height: 1.5;
+	color: var(--white);
+}
+.details p::-webkit-scrollbar {
+	display: none;
+}
+.details .highlight {
+	margin: 10px 0px;
+}
+.highlight label {
+	font-size: 12px;
+	letter-spacing: 1.5px;
+	border-radius: 10px;
+	font-weight: 500;
+	color: var(--accent);
+	background-color: var(--bg-layer-two);
+	padding: 5px 10px;
+}
+
+.details .action {
+	width: fit-content;
+	display: flex;
+	gap: 10px;
+	margin: 10px 0px 0px 0px;
+}
+.action button {
+	width: 35px;
+	height: 35px;
+	border: none;
+	color: var(--black);
+	border-radius: 50%;
+	background-color: var(--accent);
+	outline: none;
+	font-size: 17px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 5px;
+}
+@media screen and (max-width: 640px) {
+	.card {
+		flex-direction: column;
+		position: relative;
+		z-index: 1;
+	}
+	.card video {
+		width: 95%;
+		max-height: 100%;
+		margin: 0px;
+		padding: 0px;
+		position: absolute;
+		opacity: 0.2;
+		z-index: 2;
+		transition: 0.1s ease-in-out;
+		object-position: center;
+	}
+	.card video:hover {
+		opacity: 1;
+		z-index: 4;
+	}
+	.card .details {
+		width: 95%;
+		max-height: 100%;
+		align-items: center;
+		margin: 10px 10px;
+		background-color: transparent;
+		position: absolute;
+	}
+
+	.details .action {
+		position: relative;
+		z-index: 3;
+	}
+	.details p {
+		font-size: 13.5px;
+		letter-spacing: 0.2;
+		font-weight: 300;
+		position: relative;
+		z-index: 3;
+	}
+}
+@media (min-width: 800px) and (max-width: 1440px) {
+	.card {
+		width: 100%;
+		height: 500px;
+		flex-direction: column;
+		position: relative;
+		position: 0;
+	}
+	.card video {
+		width: 98%;
+		height: 95%;
+		max-height: 95%;
+		margin: 0px 0px;
+		padding: 0px;
+		border-radius: 10px;
+		position: relative;
+		z-index: 1;
+	}
+	.overlay {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		border-radius: 20px;
+		background: linear-gradient(
+			140deg,
+			rgba(0, 0, 0, 0.747) 20%,
+			rgba(255, 255, 255, 0) 100%
+		);
+		top: 0;
+		left: 0;
+		z-index: 2;
+	}
+	.card .details {
+		width: 100%;
+		height: 50%;
+		max-width: 100%;
+		max-height: 100%;
+		margin-right: 0px;
+		padding: 25px 40px;
+		background-color: transparent;
+		position: absolute;
+		top: 0rem;
+		left: 0rem;
+		z-index: 2;
+	}
+	.details p {
+		max-height: 100px;
+		max-width: 60%;
+		font-size: 14px;
+		font-weight: 300;
+		letter-spacing: 0.6;
+		line-height: 1.6;
+		margin-bottom: 20px;
+	}
+	.highlight label {
+		border-radius: 10px;
+		padding: 5px 10px;
+		font-size: 13px;
+		letter-spacing: 1px;
+		font-weight: 500;
+		border: 2px solid var(--accent);
+		background-color: transparent;
+	}
+	.details .action {
+		width: fit-content;
+		display: flex;
+		gap: 15px;
+		margin: 20px 0px 0px 0px;
+	}
+	.action button {
+		width: 45px;
+		height: 45px;
+		font-size: 18px;
+	}
+}
