@@ -76,7 +76,10 @@ const Home = () => {
 							<source src={proThree} />
 						</video>
 					</div>
-					<button type="button" onClick={() => navigateBtn("project")}>
+					<button
+						type="button"
+						onClick={() => navigateBtn("/Kartheeswaran/project")}
+					>
 						View All Project
 					</button>
 				</div>

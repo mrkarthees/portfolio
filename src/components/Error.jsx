@@ -1,14 +1,15 @@
 import React from "react";
 import "../css/Error.css";
-import { Link } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 const Error = () => {
+	const navigateBtn = useNavigate();
 	return (
 		<div className="error-container">
 			<h1>404</h1>
 			<h2>Page Not Found</h2>
-			<Link to="/">
-				<button>Back To Home</button>
-			</Link>
+			<button onClick={() => navigateBtn("/Kartheeswaran/home")}>
+				Back To Home
+			</button>
 		</div>
 	);
 };
