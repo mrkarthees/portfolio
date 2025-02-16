@@ -13,11 +13,11 @@ import Routing from "./layout/Routing";
 const App = () => {
 	const router = createBrowserRouter(
 		createRoutesFromChildren(
-			<Route path="/" element={<Routing />}>
+			<Route path="Kartheeswaran/" element={<Routing />}>
 				<Route index element={<Home />} />
-				<Route path="project" element={<Project />} />
-				<Route path="about" element={<About />} />
-				<Route path="contact" element={<Contact />} />
+				<Route path="Kartheeswaran/project" element={<Project />} />
+				<Route path="Kartheeswaran/about" element={<About />} />
+				<Route path="Kartheeswaran/contact" element={<Contact />} />
 			</Route>
 		)
 	);
