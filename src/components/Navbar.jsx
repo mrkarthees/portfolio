@@ -36,15 +36,15 @@ const Navbar = () => {
 							<li>Home</li>
 						</NavLink>
 
-						<NavLink to="/project">
+						<NavLink to="project">
 							<li>Projects</li>
 						</NavLink>
 
-						<NavLink to="/about">
+						<NavLink to="about">
 							<li>About</li>
 						</NavLink>
 
-						<NavLink to="/contact">
+						<NavLink to="contact">
 							<li>Contact</li>
 						</NavLink>
 					</ul>

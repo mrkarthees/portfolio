@@ -9,15 +9,17 @@ import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import Project from "./pages/Project";
 import Routing from "./layout/Routing";
+import Error from "./components/Error";
 
 const App = () => {
 	const router = createBrowserRouter(
 		createRoutesFromChildren(
-			<Route path="Kartheeswaran/" element={<Routing />}>
+			<Route path="/" element={<Routing />}>
 				<Route index element={<Home />} />
-				<Route path="Kartheeswaran/project" element={<Project />} />
-				<Route path="Kartheeswaran/about" element={<About />} />
-				<Route path="Kartheeswaran/contact" element={<Contact />} />
+				<Route path="project" element={<Project />} />
+				<Route path="about" element={<About />} />
+				<Route path="contact" element={<Contact />} />
+				<Route path="*" element={<Error />} />
 			</Route>
 		)
 	);
