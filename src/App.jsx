@@ -15,6 +15,7 @@ const App = () => {
 	const router = createBrowserRouter(
 		createRoutesFromChildren(
 			<Route path="Kartheeswaran/" element={<Routing />}>
+				<Route index element={<Home />} />
 				<Route path="home" element={<Home />} />
 				<Route path="project" element={<Project />} />
 				<Route path="about" element={<About />} />
