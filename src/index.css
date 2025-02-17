@@ -26,12 +26,6 @@
 	--white: #000;
 }
 .app-container {
-	width: 100%;
-	min-height: 100dvh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
 	background-color: var(--bg);
 	background-image: radial-gradient(
 		at 20% -80%,

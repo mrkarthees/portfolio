@@ -1,12 +1,12 @@
 .card {
 	width:100%;
-	min-width: 300px;
 	height: 280px;
 	border: 1px solid var(--border);
 	border-radius: 15px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	margin: 1rem 0;
 }
 .card video {
 	width: 40%;
@@ -24,11 +24,12 @@
 	max-height: 90%;
 	margin-right: 10px;
 	border-radius: 10px;
-	padding: 10px;
+	padding: 20px;
 	background-color: var(--bg-layer-one);
 }
 .details h1 {
 	font-size: 18px;
+	line-height: 1.5;
 	font-weight: 600;
 	letter-spacing: 1.5px;
 	text-transform: uppercase;
@@ -45,6 +46,7 @@
 	text-transform: capitalize;
 	line-height: 1.5;
 	color: var(--white);
+	margin-top: 1rem;
 }
 .details p::-webkit-scrollbar {
 	display: none;
@@ -84,9 +86,11 @@
 }
 @media screen and (max-width: 640px) {
 	.card {
+		width: 70%;
 		flex-direction: column;
 		position: relative;
 		z-index: 1;
+
 	}
 	.card video {
 		width: 95%;
@@ -104,7 +108,7 @@
 		z-index: 4;
 	}
 	.card .details {
-		width: 95%;
+		width: 100%;
 		max-height: 100%;
 		align-items: center;
 		margin: 10px 10px;

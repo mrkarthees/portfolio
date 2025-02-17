@@ -1,7 +1,6 @@
 .about-container {
-	width: 90%;
-	min-height: 100vh;
-	margin: 1rem 0;
+	width: 100%;
+	min-height: 100dvh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
