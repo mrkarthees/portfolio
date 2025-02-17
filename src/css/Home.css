@@ -1,10 +1,11 @@
 .home-container {
 	width: 90%;
-	min-height: 100dvh;
+	height: 100vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	scroll-behavior: smooth;
 }
 .home-container img {
 	position: absolute;
@@ -206,6 +207,7 @@
 	text-align: center;
 	letter-spacing: 1.5px;
 	font-weight: 600;
+	margin: 10px;
 }
 .project-img {
 	width: 100%;

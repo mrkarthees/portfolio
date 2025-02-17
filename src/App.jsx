@@ -1,6 +1,7 @@
 import {
 	Route,
 	RouterProvider,
+	Routes,
 	createBrowserRouter,
 	createRoutesFromChildren,
 } from "react-router-dom";
@@ -10,23 +11,21 @@ import Home from "./pages/Home";
 import Project from "./pages/Project";
 import Routing from "./layout/Routing";
 import Error from "./components/Error";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 const App = () => {
-	const router = createBrowserRouter(
-		createRoutesFromChildren(
-			<Route path="Kartheeswaran/" element={<Routing />}>
-				<Route index element={<Home />} />
-				<Route path="home" element={<Home />} />
+	return (
+		<div className="app-container">
+			<Navbar />
+			<Routes>
+				<Route path="/" element={<Home />} />
 				<Route path="project" element={<Project />} />
 				<Route path="about" element={<About />} />
 				<Route path="contact" element={<Contact />} />
 				<Route path="*" element={<Error />} />
-			</Route>
-		)
-	);
-	return (
-		<div>
-			<RouterProvider router={router} />
+			</Routes>
+			<Footer />
 		</div>
 	);
 };

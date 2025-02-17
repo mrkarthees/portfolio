@@ -1,6 +1,5 @@
 .project-container {
 	width: 90%;
-	min-height: 100dvh;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 	justify-content: center;
