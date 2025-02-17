@@ -4,6 +4,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
 	color: var(--white);
 }
 .contact-container h1 {
@@ -31,8 +32,8 @@
 	margin: 5px;
 	color: var(--accent);
 }
-form input,
-textarea {
+.contact-container form input,
+.contact-container textarea {
 	font-size: 15px;
 	padding: 10px;
 	letter-spacing: 0.5px;
@@ -45,15 +46,15 @@ textarea {
 	border-radius: 10px;
 	resize: none;
 }
-form input:focus {
+.contact-container form input:focus {
 	outline: none;
 	border: 1px solid var(--accent);
 }
-form textarea:focus {
+.contact-container form textarea:focus {
 	outline: none;
 	border: 1px solid var(--accent);
 }
-form button {
+.contact-container form button {
 	width: 100%;
 	border: none;
 	outline: none;
@@ -96,7 +97,7 @@ form button {
 		width: 90%;
 	}
 	.contact-container p {
-		width: 90%;
+		width: 80%;
 		line-height: 1.5;
 		font-weight: 300;
 	}
