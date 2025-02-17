@@ -45,7 +45,7 @@ const Contact = () => {
 			<div className="social">
 				<button
 					type="button"
-					onClick={() => (window.location = "mailto:yourmail@domain.com")}
+					onClick={() => (window.location = "mailto:karthees.in@gmail.com")}
 				>
 					<LuMail />
 				</button>

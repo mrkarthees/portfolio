@@ -70,7 +70,7 @@ const About = () => {
 			<div className="social">
 				<button
 					type="button"
-					onClick={() => (window.location = "mailto:yourmail@domain.com")}
+					onClick={() => (window.location = "mailto:karthees.in@gmail.com")}
 				>
 					<SiGmail />
 				</button>
