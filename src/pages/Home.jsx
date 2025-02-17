@@ -13,53 +13,49 @@ import { useNavigate } from "react-router-dom";
 const Home = () => {
 	const navigateBtn = useNavigate();
 	return (
-		<>
-			<div id="home" className="home-container">
-				<img src={watermarkLogo} alt="Karthees Watermark" />
-				<section className="hero">
-					<h1>
-						Hi, I'm <span>Kartheeswaran</span>
-					</h1>
-					<h2>Developer & Designer</h2>
-					<p>
-						I develop and design modern web apps using the <span>MERN </span>
-						stack, blending technical skills with a passion for design.
-					</p>
-					<h3>
-						<i>
-							<FaQuoteLeft />
-						</i>{" "}
-						<span>Thinking </span>
-						only <span> leads </span>to
-						<span> creativity</span>
-					</h3>
-				</section>
-			</div>
+		<div id="home" className="home-container">
+			<section className="hero">
+				<h1>
+					Hi, I'm <span>Kartheeswaran</span>
+				</h1>
+				<h2>Developer & Designer</h2>
+				<p>
+					I develop and design modern web apps using the <span>MERN </span>
+					stack, blending technical skills with a passion for design.
+				</p>
+				<h3>
+					<i>
+						<FaQuoteLeft />
+					</i>
+					<span>Thinking </span>
+					only <span> leads </span>to
+					<span> creativity</span>
+				</h3>
+			</section>
+
 			<section className="hero-content">
-				<div className="project-show">
-					<video type="video/mp4" autoPlay loop muted>
-						<source src={projectVideo} />
-					</video>
-				</div>
+				<video type="video/mp4" autoPlay loop muted>
+					<source src={projectVideo} />
+				</video>
 
 				<div className="card-show">
-					<div className="card">
+					<div className="home-card">
 						<div className="card-title">
-							<FaCode className="icon" />
+							<span>
+								<FaCode />
+							</span>
 							<h4>Developer</h4>
 						</div>
-						<p className="description">
-							Developing with precision and innovation.
-						</p>
+						<p>Developing with precision and innovation.</p>
 					</div>
-					<div className="card">
+					<div className="home-card">
 						<div className="card-title">
-							<FaEdit className="icon" />
+							<span>
+								<FaEdit />
+							</span>
 							<h4>Designer</h4>
 						</div>
-						<p className="description">
-							Turning ideas into captivating visuals.
-						</p>
+						<p>Turning ideas into captivating visuals.</p>
 					</div>
 				</div>
 
@@ -81,7 +77,7 @@ const Home = () => {
 					</button>
 				</div>
 			</section>
-		</>
+		</div>
 	);
 };
 

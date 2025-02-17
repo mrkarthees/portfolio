@@ -1,6 +1,6 @@
 .about-container {
 	width: 90%;
-	margin-top: 4rem;
+	margin: 1rem 0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -17,7 +17,7 @@
 	font-size: 28px;
 	font-weight: 500;
 	letter-spacing: 1px;
-	margin: 20px;
+	margin-bottom: 1rem;
 	text-wrap: nowrap;
 }
 .about-container p {
@@ -58,9 +58,11 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	margin: 1rem;
+
 }
 .icon i {
-	font-size: 25px;
+	font-size: 1.5rem;
 }
 .about-container .notes {
 	width: 70%;
@@ -117,8 +119,4 @@
 		font-weight: 400;
 	}
 }
-@media screen and (max-width: 700px) {
-	.about-container {
-		margin-top: 7rem;
-	}
-}
+

@@ -1,12 +1,13 @@
 footer {
-	width: 70%;
-	padding: 10px;
+	width: 100%;
+	padding: 20px;
 	color: var(--white);
-	background-image: radial-gradient(
+	background: radial-gradient(
 		at 50% 100%,
 		var(--accent) -160rem,
 		transparent 60%
 	);
+	background-color: black;
 }
 footer p {
 	text-align: center;
@@ -16,9 +17,6 @@ footer p {
 	line-height: 1.6;
 }
 @media screen and (max-width: 500px) {
-	footer {
-		width: 80%;
-	}
 	footer p {
 		font-size: 12px;
 		font-weight: 200;

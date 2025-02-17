@@ -5,7 +5,7 @@
 	align-items: center;
 	justify-content: center;
 	color: var(--white);
-	margin-top: 5rem;
+	margin: 1rem 0;
 }
 .contact-container h1 {
 	font-size: 30px;
@@ -91,9 +91,6 @@ form button {
 	padding: 5px;
 }
 @media screen and (max-width: 700px) {
-	.contact-container {
-		margin-top: 7rem;
-	}
 	form {
 		width: 100%;
 	}

@@ -16,8 +16,10 @@ import Footer from "./components/Footer";
 
 const App = () => {
 	return (
+		<>
+		<Navbar />
 		<div className="app-container">
-			<Navbar />
+			
 			<Routes>
 				<Route path="/" element={<Home />} />
 				<Route path="project" element={<Project />} />
@@ -25,8 +27,11 @@ const App = () => {
 				<Route path="contact" element={<Contact />} />
 				<Route path="*" element={<Error />} />
 			</Routes>
-			<Footer />
+			
 		</div>
+		
+		<Footer />
+		</>
 	);
 };
 
