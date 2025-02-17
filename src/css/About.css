@@ -13,6 +13,7 @@
 	font-size: 30px;
 	font-weight: 600;
 	letter-spacing: 2px;
+	margin: 1rem;
 }
 .about-container h2 {
 	font-size: 28px;
@@ -26,6 +27,7 @@
 	text-align: center;
 	line-height: 1.8;
 	letter-spacing: 0.6px;
+	margin: 1rem;
 }
 
 .about-container ul {
