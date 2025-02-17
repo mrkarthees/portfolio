@@ -2,23 +2,12 @@ footer {
 	width: 100%;
 	padding: 20px;
 	color: var(--white);
-	background: radial-gradient(
-		at 50% 100%,
-		var(--accent) -160rem,
-		transparent 60%
-	);
 	background-color: black;
 }
 footer p {
 	text-align: center;
-	font-size: 13.5px;
+	font-size: 14px;
 	letter-spacing: 0.7px;
-	font-weight: 200;
+	font-weight: 300;
 	line-height: 1.6;
-}
-@media screen and (max-width: 500px) {
-	footer p {
-		font-size: 12px;
-		font-weight: 200;
-	}
 }
