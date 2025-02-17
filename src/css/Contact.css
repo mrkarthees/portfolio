@@ -1,25 +1,21 @@
 .contact-container {
 	width: 100%;
-	min-height: 100dvh;
+	color: var(--white);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
-	color: var(--white);
 }
 .contact-container h1 {
-	font-size: 30px;
+	font-size: 2rem;
 	font-weight: 600;
 	letter-spacing: 2px;
-	margin: 1rem;
 }
 .contact-container p {
 	width: 70%;
 	text-align: center;
 	line-height: 1.6;
-	font-weight: 400;
 	letter-spacing: 0.6px;
-	margin-bottom: 40px;
+	margin-bottom: 2rem;
 }
 .contact-container form {
 	width: 50%;
