@@ -25,6 +25,7 @@
 	font-weight: 600;
 	letter-spacing: 1px;
 	text-wrap: nowrap;
+	margin: 1rem;
 }
 .hero p {
 	font-size: clamp(0.6rem,5vw,1rem);
