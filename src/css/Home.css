@@ -1,132 +1,132 @@
 .home-container {
-	width: 100%;
-	min-height: 100dvh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+  width: 100%;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .hero {
-	width: 90%;
-	color: var(--white);
-	margin: 2rem;
-	text-align: center;
+  width: 90%;
+  color: var(--white);
+  margin: 2rem;
+  text-align: center;
 }
 .hero span {
-	color: var(--accent);
+  color: var(--accent);
 }
 .hero h1 {
-	font-size: clamp(1.3rem,5vw,2rem);
-	letter-spacing: 1.5px;
-	text-wrap: nowrap;
+  font-size: clamp(1.3rem, 5vw, 2rem);
+  letter-spacing: 1.5px;
+  text-wrap: nowrap;
 }
 .hero h2 {
-	font-size: clamp(1.2rem,5vw,1.5rem);
-	font-weight: 600;
-	letter-spacing: 1px;
-	text-wrap: nowrap;
-	margin: 1rem;
+  font-size: clamp(1.2rem, 5vw, 1.5rem);
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-wrap: nowrap;
+  margin: 1rem;
 }
 .hero p {
-	font-size: clamp(0.6rem,5vw,1rem);
-	letter-spacing: 1.2px;
-	line-height: 2;
+  font-size: clamp(0.6rem, 5vw, 1rem);
+  letter-spacing: 1.2px;
+  line-height: 2;
 }
 .hero h3 {
-	font-weight: 500;
-	letter-spacing: 1px;
-	margin-top: 2rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-top: 2rem;
 }
 .hero-content {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .hero-content video {
-	width: 90%;
-	border-radius: 1rem;
+  width: 90%;
+  border-radius: 1rem;
 }
 .card-show {
-	width: 90%;
-	display: flex;
-	justify-content: center;
-	margin: 2rem;
-	color: var(--white);
-	gap: 1rem;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+  color: var(--white);
+  gap: 1rem;
 }
 .card-show p {
-	text-align: center;
-	line-height: 2;
-	letter-spacing: 1.2px;
+  text-align: center;
+  line-height: 2;
+  letter-spacing: 1.2px;
 }
 .home-card {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	height: 200px;
-	max-height: 200px;
-	padding: 1rem;
-	border: 1px solid var(--border);
-	border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  max-height: 200px;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 1rem;
 }
 .card-title {
-	display: flex;
-	align-items: center;
-	gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 .card-title h4 {
-	font-size: clamp(0.9rem, 5vw, 1.5rem);
-	font-weight: 600;
-	letter-spacing: 1px;
-	color: var(--accent);
+  font-size: clamp(0.9rem, 5vw, 1.5rem);
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--accent);
 }
 
 .card-title span {
-	font-size: clamp(1.5rem, 5vw, 2rem);
+  font-size: clamp(1.5rem, 5vw, 2rem);
 }
 .project-cards {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .project-img {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	justify-items: center;
-	gap: 1rem;
-
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: center;
+  gap: 1rem;
 }
 .project-img video {
-	width: 70%;
-	min-width: 250px;
-	object-fit: cover;
-	object-position: center;
-	aspect-ratio: 1/1;
+  width: 90%;
+  aspect-ratio: 9/16;
+  min-width: 250px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 1rem;
 }
-.project-cards h1{
-	color: var(--accent);
-	margin: 1rem;
+.project-cards h1 {
+  color: var(--accent);
+  margin: 1rem;
 }
 .project-cards button {
-	padding:5px 10px;
-	border: none;
-	outline: none;
-	background-color: var(--accent);
-	font-size: clamp(12px,2vw,13px);
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	font-weight: 500;
-	border-radius: 1rem;
-	margin:1rem;
-	cursor: pointer;
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  background-color: var(--accent);
+  font-size: clamp(12px, 2vw, 13px);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+  border-radius: 1rem;
+  margin: 1rem;
+  cursor: pointer;
 }
 @media screen and (max-width: 640px) {
-	.card-show {
-		flex-direction: column;
-	}
+  .card-show {
+    flex-direction: column;
+  }
 }
