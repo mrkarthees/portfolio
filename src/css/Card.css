@@ -33,11 +33,13 @@
   text-transform: capitalize;
   line-height: 1.6;
   color: var(--white);
+  margin: 1rem 0;
 }
 .details p::-webkit-scrollbar {
   display: none;
 }
 .details .highlight {
+  margin: 1rem 0;
   text-transform: uppercase;
 }
 .highlight label {
@@ -49,7 +51,6 @@
   background-color: var(--accent-layer-one);
   padding: 5px 10px;
 }
-
 .details .action {
   width: fit-content;
   display: flex;

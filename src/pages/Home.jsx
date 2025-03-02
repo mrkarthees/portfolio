@@ -4,10 +4,19 @@ import { FaQuoteLeft } from 'react-icons/fa6'
 import { FaCode, FaEdit } from 'react-icons/fa'
 import watermarkLogo from '../assets/images/Color Logo.png'
 import projectVideo from '../assets/video/Project Show.mp4'
-import proOne from '../assets/video/1 P.mp4'
-import proTwo from '../assets/video/2 P.mp4'
-import proThree from '../assets/video/3 P.mp4'
-import proRecent from '../assets/video/6 P.mp4'
+import p1Desktop from '../assets/video/1 D.mp4'
+import p1Phone from '../assets/video/1 P.mp4'
+import p2Desktop from '../assets/video/2 D.mp4'
+import p2Phone from '../assets/video/2 P.mp4'
+import p3Desktop from '../assets/video/3 D.mp4'
+import p3Phone from '../assets/video/3 P.mp4'
+import p4Desktop from '../assets/video/4 D.mp4'
+import p4Phone from '../assets/video/4 P.mp4'
+import p5Desktop from '../assets/video/5 D.mp4'
+import p5Phone from '../assets/video/5 P.mp4'
+import p6Desktop from '../assets/video/6 D.mp4'
+import p6Phone from '../assets/video/6 P.mp4'
+import p7Desktop from '../assets/video/7 D.mp4'
 
 import { useNavigate } from 'react-router-dom'
 
@@ -64,13 +73,13 @@ const Home = () => {
           <h1>Recent Works</h1>
           <div className="project-img">
             <video autoPlay loop muted>
-              <source src={proTwo} />
+              <source src={p7Desktop} />
             </video>
             <video autoPlay loop muted>
-              <source src={proRecent} />
+              <source src={p6Phone} />
             </video>
             <video autoPlay loop muted>
-              <source src={proOne} />
+              <source src={p2Phone} />
             </video>
           </div>
           <button type="button" onClick={() => navigateBtn('project')}>
