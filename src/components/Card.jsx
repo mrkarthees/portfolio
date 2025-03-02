@@ -1,28 +1,52 @@
-import React from "react";
-import "../css/Card.css";
-import { FaShareAlt } from "react-icons/fa";
-import { HiEye } from "react-icons/hi";
+import React from 'react'
+import '../css/Card.css'
+import { FaShareAlt } from 'react-icons/fa'
+import { HiEye, HiEyeOff, HiCode } from 'react-icons/hi'
+import { MdFileUploadOff } from 'react-icons/md'
+import { Link } from 'react-router-dom'
 
-const Card = ({ image, name, description, highlight }) => {
-	return (
-		<div className="card">
-			<video autoPlay loop muted>
-				<source src={image} />
-			</video>
-			<div className="overlay"></div>
-			<div className="details">
-				<h1>{name}</h1>
-				<p>{description}</p>
-				<div className="highlight">
-					<label>{highlight}</label>
-				</div>
-				{/* <div className="action">
-					<button type="button">{<HiEye />}</button>
-					<button type="button">{<FaShareAlt />}</button>
-				</div> */}
-			</div>
-		</div>
-	);
-};
+const Card = ({
+  image,
+  name,
+  description,
+  highlight,
+  projectLink,
+  projectCode,
+}) => {
+  return (
+    <div className="card">
+      {/* <div className="overlay"></div> */}
 
-export default Card;
+      <div className="details">
+        <video autoPlay loop muted>
+          <source src={image} />
+        </video>
+        <h1>{name}</h1>
+        <p>{description}</p>
+        <div className="highlight">
+          <label>{highlight}</label>
+        </div>
+        <div className="action">
+          <Link
+            to={projectLink === false ? '' : projectLink}
+            target={projectLink === false ? '' : '_blank'}
+          >
+            <button type="button">
+              {projectLink === false ? <HiEyeOff /> : <HiEye />}
+            </button>
+          </Link>
+          <Link
+            to={projectCode === false ? '' : projectCode}
+            target={projectCode === false ? '' : '_blank'}
+          >
+            <button type="button">
+              {projectCode === false ? <MdFileUploadOff /> : <HiCode />}
+            </button>
+          </Link>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default Card

@@ -1,35 +1,35 @@
 /* @import "tailwindcss"; */
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: "Outfit", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
 }
 :root {
-	--bg: #121212;
-	--bg-layer-one: #282828;
-	--bg-layer-two: #3f3f3f;
-	--border: #575757;
-	--accent: #49ff4a;
-	--accent-layer-one: #c0ffb4;
-	--white: #fff;
-	--black: #000;
+  --bg: #121212;
+  --bg-layer-one: #282828;
+  --bg-layer-two: #3f3f3f;
+  --border: #575757;
+  --accent: #49ff4a;
+  --accent-layer-one: #49ff490e;
+  --white: #fff;
+  --black: #000;
 }
 .lightMood {
-	--bg: #ffffff;
-	--bg-layer-one: #f0f0f0;
-	--bg-layer-two: #e1e1e1;
-	--border: #d3d3d3;
-	--accent: #49ff4a;
-	--black: #fff;
-	--white: #000;
+  --bg: #ffffff;
+  --bg-layer-one: #f0f0f0;
+  --bg-layer-two: #e1e1e1;
+  --border: #d3d3d3;
+  --accent: #49ff4a;
+  --black: #fff;
+  --white: #000;
 }
 .app-container {
-	background-color: var(--bg);
-	background-image: radial-gradient(
-		at 20% -80%,
-		var(--accent) -100rem,
-		transparent 45%
-	);
+  background-color: var(--bg);
+  background-image: radial-gradient(
+    at 20% -80%,
+    var(--accent) -100rem,
+    transparent 45%
+  );
 }
