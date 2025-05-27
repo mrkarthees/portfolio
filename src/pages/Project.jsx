@@ -15,11 +15,21 @@ import p5Phone from '../assets/video/5 P.mp4'
 import p6Desktop from '../assets/video/6 D.mp4'
 import p6Phone from '../assets/video/6 P.mp4'
 import p7Desktop from '../assets/video/7 D.mp4'
+import p8Phone from '../assets/video/8 P.mp4'
+import p8Desktop from '../assets/video/8 D.mp4'
 const Project = () => {
   const [width, setWidth] = useState(window.innerWidth)
   return (
     <div id="project" className="project-container">
       <div className="show-cards">
+        <Card
+          name="E-Commerce Website"
+          image={width < 640 ? p8Phone : p8Desktop}
+          description="A fully responsive e-commerce website designed and developed using the MERN stack. This platform offers a clean, user-friendly interface with smooth navigation and secure login & registration. Features include product browsing, customer reviews, and a seamless shopping experience across mobile, tablet, and desktop devices."
+          highlight="MERN Stack"
+          projectLink="https://deceptive-review-detection-frontend.onrender.com/"
+          projectCode="https://github.com/MKarthees/deceptive-review-detection.git"
+        />
         <Card
           name="Digital Clock & Stopwatch"
           image={width < 640 ? p1Phone : p1Desktop}

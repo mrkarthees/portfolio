@@ -17,6 +17,8 @@ import p5Phone from '../assets/video/5 P.mp4'
 import p6Desktop from '../assets/video/6 D.mp4'
 import p6Phone from '../assets/video/6 P.mp4'
 import p7Desktop from '../assets/video/7 D.mp4'
+import p8Phone from '../assets/video/8 P.mp4'
+import p8Desktop from '../assets/video/8 D.mp4'
 
 import { useNavigate } from 'react-router-dom'
 
@@ -73,13 +75,13 @@ const Home = () => {
           <h1>Recent Works</h1>
           <div className="project-img">
             <video autoPlay loop muted>
+              <source src={p8Phone} />
+            </video>
+            <video autoPlay loop muted>
               <source src={p7Desktop} />
             </video>
             <video autoPlay loop muted>
               <source src={p6Phone} />
-            </video>
-            <video autoPlay loop muted>
-              <source src={p2Phone} />
             </video>
           </div>
           <button type="button" onClick={() => navigateBtn('project')}>
