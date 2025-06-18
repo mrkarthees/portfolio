@@ -5,47 +5,47 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	scroll-behavior: smooth;
-
+	padding-top: 6rem;
 }
 .contact-container h1 {
-	font-size: 2rem;
-	font-weight: 600;
+	font-size: clamp(1rem, 5vw, 1.5rem);
+	color: var(--accent);
+	font-weight: 500;
+	text-transform: uppercase;
 	letter-spacing: 2px;
-	margin: 1rem;
 }
 .contact-container p {
-	width: 70%;
 	text-align: center;
-	line-height: 1.6;
-	letter-spacing: 0.6px;
-	margin-bottom: 2rem;
+	font-size: 14px;
+	letter-spacing: 0.5px;
+	line-height: 1.7;
+	margin: 1rem 0;
 }
 .contact-container form {
-	width: 50%;
-	padding: 40px 20px;
-	border-radius: 20px;
-	background-color: var(--bg-layer-one);
-	margin-bottom: 1rem;
+	width: 90%;
+	padding: 1rem;
+	border-radius: 1rem;
+	border: 1px solid var(--border);
 }
 .contact-container form label {
-	margin-bottom: 2rem;
+	font-size: clamp(0.7rem, 5vw, 0.8rem);
 	color: var(--accent);
+	font-weight: 300;
+	text-transform: capitalize;
+	letter-spacing: 1.2px;
 }
 .contact-container form input,
 .contact-container textarea {
-	font-size: 15px;
-	padding: 10px;
-	letter-spacing: 0.5px;
-	margin-bottom: 20px;
+	font-size: 0.8rem;
 	width: 100%;
+	padding: 0.5rem;
 	outline: none;
+	resize: none;
 	color: var(--white);
 	background-color: transparent;
 	border: 1px solid var(--border);
-	border-radius: 10px;
-	resize: none;
-	margin: 0.5rem;
+	border-radius: 0.5rem;
+	margin-bottom: 1rem;
 }
 .contact-container form input:focus {
 	outline: none;
@@ -59,26 +59,29 @@
 	width: 100%;
 	border: none;
 	outline: none;
-	padding: 10px;
-	border-radius: 10px;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	font-weight: 500;
+	padding: 0.5rem 0;
+	border-radius: 0.5rem;
+	letter-spacing: 1.2px;
 	color: var(--accent);
 	background-color: var(--bg-layer-two);
 	cursor: pointer;
+	font-size: 0.8rem;
 }
 .contact-container h3 {
-	font-size: 25px;
-	letter-spacing: 1px;
+	font-size: clamp(0.8rem, 5vw, 1rem);
+	color: var(--accent);
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin: 1rem 0 0.5rem 0rem;
+	text-shadow: 0px 0rem 1rem var(--accent);
 }
 .social {
-	width: 250px;
+	width: 50%;
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
-	margin-top: 5px;
-	margin-bottom: 20px;
+	margin-bottom: 1rem;
 }
 .social button {
 	width: 35px;
@@ -93,13 +96,8 @@
 	color: var(--accent);
 	padding: 5px;
 }
-@media screen and (max-width: 700px) {
-	.contact-container form {
-		width: 90%;
-	}
-	.contact-container p {
-		width: 80%;
-		line-height: 1.5;
-		font-weight: 300;
+@media screen and (max-width: 500px) {
+	.social {
+		width: 100%;
 	}
 }

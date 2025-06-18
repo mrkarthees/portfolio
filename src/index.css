@@ -1,35 +1,30 @@
-/* @import "tailwindcss"; */
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import 'tailwindcss';
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Outfit', sans-serif;
+	font-family: 'Poppins', sans-serif;
+	list-style: none;
 }
 :root {
-  --bg: #121212;
-  --bg-layer-one: #282828;
-  --bg-layer-two: #3f3f3f;
-  --border: #575757;
-  --accent: #49ff4a;
-  --accent-layer-one: #49ff490e;
-  --white: #fff;
-  --black: #000;
+	--bg: #030712;
+	--bg-layer-one: #0f172b;
+	--bg-layer-two: #1d293d;
+	--border: #1d293d;
+	--accent: #00c951;
+	--accent-layer-one: #00c95028;
+	--white: #fff;
+	--black: #000;
 }
-.lightMood {
-  --bg: #ffffff;
-  --bg-layer-one: #f0f0f0;
-  --bg-layer-two: #e1e1e1;
-  --border: #d3d3d3;
-  --accent: #49ff4a;
-  --black: #fff;
-  --white: #000;
-}
+
 .app-container {
-  background-color: var(--bg);
-  background-image: radial-gradient(
-    at 20% -80%,
-    var(--accent) -100rem,
-    transparent 45%
-  );
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--bg);
+}
+.container {
+	width: 90%;
+	background-color: var(--bg);
+	border-left: 1px solid var(--border);
+	border-right: 1px solid var(--border);
 }
