@@ -1,12 +1,12 @@
 .about-container {
 	width: 100%;
-	min-height: 100dvh;
+	height: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	color: var(--white);
-	padding-top: 5rem;
+	padding-top: 6rem;
 }
 .about-container h1 {
 	font-size: clamp(1rem, 5vw, 1.5rem);

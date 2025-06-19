@@ -1,5 +1,5 @@
 footer {
-	padding: 1rem;
+	padding: 0.5rem;
 	color: var(--white);
 	background-color: var(--bg);
 	border-top: 1px solid var(--border);
@@ -8,5 +8,5 @@ footer p {
 	text-align: center;
 	font-size: 14px;
 	letter-spacing: 0.5px;
-	line-height: 1.7;
+	line-height: 1.6;
 }

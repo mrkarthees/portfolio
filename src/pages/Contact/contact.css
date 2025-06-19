@@ -1,6 +1,5 @@
 .contact-container {
 	width: 100%;
-	min-height: 100dvh;
 	color: var(--white);
 	display: flex;
 	flex-direction: column;
@@ -15,6 +14,7 @@
 	letter-spacing: 2px;
 }
 .contact-container p {
+	width: 90%;
 	text-align: center;
 	font-size: 14px;
 	letter-spacing: 0.5px;

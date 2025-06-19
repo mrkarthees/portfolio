@@ -21,8 +21,8 @@ const Project = () => {
 	const [width, setWidth] = useState(window.innerWidth);
 	return (
 		<div className='project-container' id='project'>
+			<h1>Projects</h1>
 			<div className='show-cards'>
-				<h1>Projects</h1>
 				<Card
 					name='E-Commerce Website'
 					image={width < 640 ? p8Phone : p8Desktop}

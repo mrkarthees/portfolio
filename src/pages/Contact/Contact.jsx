@@ -31,9 +31,9 @@ const Contact = () => {
 			</p>
 			<form>
 				<label>Name:</label>
-				<input ref={name} type='text' placeholder="U'R Name" required />
+				<input ref={name} type='text' placeholder='Name' required />
 				<label>Gmail:</label>
-				<input ref={gmail} type='email' placeholder="U'R Gmail" required />
+				<input ref={gmail} type='email' placeholder='Gmail' required />
 				<label>Message:</label>
 				<textarea ref={msg} placeholder='Message' required />
 

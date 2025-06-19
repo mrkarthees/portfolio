@@ -25,6 +25,7 @@
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	color: var(--accent);
+	margin: 0;
 }
 .details p {
 	font-size: 14px;
@@ -32,6 +33,9 @@
 	line-height: 1.7;
 	margin: 0.5rem 0;
 	color: var(--white);
+	width: 100%;
+	height: 100px;
+	overflow: scroll;
 }
 .details p::-webkit-scrollbar {
 	display: none;
@@ -71,7 +75,8 @@
 }
 @media screen and (max-width: 640px) {
 	.card video {
-		aspect-ratio: 1/1;
+		width: 100%;
+		height: 100%;
 		object-fit: cover;
 	}
 }
