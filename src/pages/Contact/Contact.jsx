@@ -41,6 +41,11 @@ const Contact = () => {
 					Send
 				</button>
 			</form>
+			<p className='notes'>
+				I am always eager to explore new technologies and improve my skills to stay
+				ahead in the ever-evolving digital landscape. Let's collaborate and bring
+				your ideas to life!
+			</p>
 			<h3>Let's Connect</h3>
 			<div className='social'>
 				<button

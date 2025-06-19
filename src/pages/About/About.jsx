@@ -85,11 +85,6 @@ const About = () => {
 					</div>
 				</div>
 			</div>
-			<p className='notes'>
-				I am always eager to explore new technologies and improve my skills to stay
-				ahead in the ever-evolving digital landscape. Let's collaborate and bring
-				your ideas to life!
-			</p>
 		</div>
 	);
 };
