@@ -7,9 +7,9 @@
 	padding-top: 6rem;
 }
 .contact-container h1 {
-	font-size: clamp(1rem, 5vw, 1.5rem);
+	font-size: clamp(1.5rem, 5vw, 2.5rem);
 	color: var(--accent);
-	font-weight: 500;
+	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 }
