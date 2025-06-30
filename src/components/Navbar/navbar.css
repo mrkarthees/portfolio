@@ -11,7 +11,7 @@ nav {
 	z-index: 99;
 }
 .logo img {
-	width: 100px;
+	width: 120px;
 }
 
 li {
@@ -39,7 +39,7 @@ li {
 		gap: 1rem;
 	}
 	nav .logo {
-		width: 100px;
+		width: 120px;
 	}
 	nav ul {
 		width: 100%;
