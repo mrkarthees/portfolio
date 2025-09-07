@@ -1,9 +1,7 @@
-import React from 'react';
-import './card.css';
-import { FaShareAlt } from 'react-icons/fa';
 import { HiEye, HiEyeOff, HiCode } from 'react-icons/hi';
 import { MdFileUploadOff } from 'react-icons/md';
 import { Link } from 'react-router-dom';
+import './card.css';
 
 const Card = ({
 	image,

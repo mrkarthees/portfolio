@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './project.css';
-
 import p1Desktop from '../../assets/video/1 D.mp4';
 import p1Phone from '../../assets/video/1 P.mp4';
 import p2Desktop from '../../assets/video/2 D.mp4';
@@ -36,40 +35,40 @@ const Project = () => {
 					image={width < 640 ? p1Phone : p1Desktop}
 					description='A digital clock (24-hour & 12-hour) and stopwatch built with HTML, CSS, and JavaScript, featuring real-time updates and a user-friendly interface.'
 					highlight='HTML | CSS | JS'
-					projectLink='https://mkarthees.github.io/DigitalClock/'
-					projectCode='https://github.com/MKarthees/DigitalClock'
+					projectLink='https://imkarthees.github.io/digital-clock-app/'
+					projectCode='https://github.com/imkarthees/digital-clock-app'
 				/>
 				<Card
 					name='Counter App'
 					image={width < 640 ? p2Phone : p2Desktop}
 					description='A simple counter application built with HTML, CSS, and JavaScript, allowing users to increment, decrement, and reset values with ease.'
 					highlight='HTML | CSS | JS'
-					projectLink='https://mkarthees.github.io/Counter/'
-					projectCode='https://github.com/MKarthees/Counter'
+					projectLink='https://imkarthees.github.io/counter-app/'
+					projectCode='https://github.com/imkarthees/counter-app'
 				/>
 				<Card
 					name='To-Do List App'
 					image={width < 640 ? p3Phone : p3Desktop}
 					description='A simple to-do list app using HTML, CSS, and JavaScript for easy task management with a clean, responsive design.'
 					highlight='HTML | CSS | JS'
-					projectLink='https://mkarthees.github.io/Todo-List/'
-					projectCode='https://github.com/MKarthees/Todo-List'
+					projectLink='https://imkarthees.github.io/todo-app/'
+					projectCode='https://github.com/imkarthees/todo-app'
 				/>
 				<Card
 					name='Quote Generator'
 					image={width < 640 ? p4Phone : p4Desktop}
 					description='A simple quote generator using HTML, CSS, JavaScript, and Fetch API to display random quotes with a clean, responsive design.'
 					highlight='HTML | CSS | JS'
-					projectLink='https://mkarthees.github.io/QuoteGenerator/'
-					projectCode='https://github.com/MKarthees/QuoteGenerator'
+					projectLink='https://imkarthees.github.io/quote-generator-app/'
+					projectCode='https://github.com/imkarthees/quote-generator-app'
 				/>
 				<Card
 					name='Weather Checker'
 					image={width < 640 ? p5Phone : p5Desktop}
 					description='A weather-checking app built with HTML, CSS, JavaScript, and Fetch API. It provides real-time weather updates for any location with a clean, responsive interface.'
 					highlight='HTML | CSS | JS'
-					projectLink='https://mkarthees.github.io/Weather-App/'
-					projectCode='https://github.com/MKarthees/Weather-App'
+					projectLink='https://imkarthees.github.io/weather-app/'
+					projectCode='https://github.com/imkarthees/weather-app'
 				/>
 				<Card
 					name='Work Day Training Portal'
@@ -77,7 +76,7 @@ const Project = () => {
 					description='The Work Day Training Portal website for Ramaussys Technologies uses HTML, CSS, JavaScript, and React to deliver a responsive, user-friendly website, enhancing usability and boosting the company’s online presence.'
 					highlight='React'
 					projectLink={false}
-					projectCode='https://github.com/MKarthees/Work-Day'
+					projectCode='https://github.com/imkarthees/react-work-day-app'
 				/>
 				<Card
 					name='Interactive Image Slider'
@@ -85,7 +84,7 @@ const Project = () => {
 					description='A dynamic React-based image slider that combines automatic image transitions and manual navigation controls. Users can enjoy seamless image swapping with an auto-swap feature while also having the option to click through images manually.'
 					highlight='React'
 					projectLink={false}
-					projectCode={false}
+					projectCode='https://github.com/imkarthees/react-image-slider-app'
 				/>
 			</div>
 		</div>

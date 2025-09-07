@@ -1,5 +1,6 @@
 .contact-container {
 	width: 100%;
+	min-height: 100dvh;
 	color: var(--white);
 	display: flex;
 	flex-direction: column;

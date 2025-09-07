@@ -1,25 +1,48 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import './contact.css';
 import { LuLinkedin, LuGithub, LuDribbble, LuMail } from 'react-icons/lu';
 import { Link } from 'react-router-dom';
+import Footer from '../../components/Footer/Footer';
+import sendMail from '../../utils/mailer';
 
 const Contact = () => {
 	const name = useRef(null);
 	const gmail = useRef(null);
 	const msg = useRef(null);
-	const isSubmit = event => {
-		event.preventDefault();
-		if (
-			name.current.value == '' ||
-			gmail.current.value == '' ||
-			msg.current.value == ''
-		) {
-			alert('Enter all Field!');
-		} else {
-			alert('Thank you, I will respond soon.');
+	const [loading, setLoading] = useState(false);
+
+	const handleSubmit = async (e) => {
+		e.preventDefault();
+
+		const nameVal = name.current.value.trim();
+		const emailVal = gmail.current.value.trim();
+		const msgVal = msg.current.value.trim();
+
+		if (!nameVal || !emailVal || !msgVal) {
+			alert('⚠️ Please fill all fields');
+			return;
+		}
+
+		setLoading(true);
+
+		const { success, error } = await sendMail({
+			name: nameVal,
+			email: emailVal,
+			message: msgVal,
+		});
+
+		setLoading(false);
+
+		if (success) {
+			alert(
+				"🚀 Got your message! I'll hit you back soon. Thanks for reaching out 🙌"
+			);
 			name.current.value = '';
 			gmail.current.value = '';
 			msg.current.value = '';
+		} else {
+			console.error('Send failed:', error);
+			alert('😕 Oops, something went wrong. Try again in a bit?');
 		}
 	};
 	return (
@@ -29,7 +52,7 @@ const Contact = () => {
 				Got a project in mind or just want to say hi? Let's connect! I'm always open
 				to new opportunities, collaborations, and creative ideas.
 			</p>
-			<form>
+			<form onSubmit={handleSubmit}>
 				<label>Name:</label>
 				<input ref={name} type='text' placeholder='Name' required />
 				<label>Gmail:</label>
@@ -37,8 +60,8 @@ const Contact = () => {
 				<label>Message:</label>
 				<textarea ref={msg} placeholder='Message' required />
 
-				<button type='submit' onClick={() => isSubmit(event)}>
-					Send
+				<button type='submit' disabled={loading}>
+					{loading ? 'Sending...' : 'Send'}
 				</button>
 			</form>
 			<p className='notes'>
@@ -55,22 +78,23 @@ const Contact = () => {
 					<LuMail />
 				</button>
 
-				<Link target='_blank' to='https://www.linkedin.com/in/MKarthees'>
+				<Link target='_blank' to='https://www.linkedin.com/in/imkarthees'>
 					<button type='button'>
 						<LuLinkedin />
 					</button>
 				</Link>
-				<Link target='_blank' to='https://github.com/MKarthees'>
+				<Link target='_blank' to='https://github.com/imkarthees'>
 					<button type='button'>
 						<LuGithub />
 					</button>
 				</Link>
-				<Link target='_blank' to='https://dribbble.com/Karthees'>
+				<Link target='_blank' to='https://dribbble.com/imkarthees'>
 					<button type='button'>
 						<LuDribbble />
 					</button>
 				</Link>
 			</div>
+			<Footer />
 		</div>
 	);
 };

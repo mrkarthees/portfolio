@@ -1,12 +1,10 @@
 footer {
-	padding: 0.5rem;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	color: var(--white);
 	background-color: var(--bg);
 	border-top: 1px solid var(--border);
-}
-footer p {
-	text-align: center;
-	font-size: 14px;
-	letter-spacing: 0.5px;
-	line-height: 1.6;
 }
