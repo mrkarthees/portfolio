@@ -1,6 +1,6 @@
 {
-	"name": "kartheeswaran-portfolio",
-	"homepage": "https://mrkarthees.github.io/portfolio/",
+	"name": "portfolio",
+	"homepage": "https://imkarthees.github.io/react-portfolio-app/",
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
